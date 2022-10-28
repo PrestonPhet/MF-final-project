@@ -1,0 +1,12 @@
+.btnn {
+    text-decoration: none;
+    padding: 8px 15px;
+    background: $secondary-color;
+    border-radius: 20px;
+    color: $text-color1;
+    font-weight: bold;
+}
+
+.btnn:hover {
+    color: black;
+}

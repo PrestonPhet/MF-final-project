@@ -10867,10 +10867,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btnn {
+  text-decoration: none;
+  padding: 8px 15px;
+  background: orange;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.btnn:hover {
+  color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -10883,9 +10900,10 @@ textarea.form-control-lg {
   padding: 20px;
   color: white;
   align-items: center;
+  z-index: 1;
 }
 .navbar .logo {
-  width: 40vw;
+  width: 25vw;
 }
 .navbar .navlinks {
   display: flex;
@@ -10901,41 +10919,28 @@ textarea.form-control-lg {
   font-size: 20px;
   font-weight: bold;
 }
-.navbar .btn {
-  text-decoration: none;
-  padding: 8px 15px;
-  background: orange;
-  border-radius: 20px;
-  color: white;
-}
 
 header {
   background-image: url(../img/pexels-alexander-dummer-134469.jpg);
+  opacity: 0.9;
   width: 100vw;
   height: 100vh;
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 header .hero {
-  margin-bottom: 150px;
   color: orange;
   text-align: center;
 }
 header .hero .hero-h1 {
   font-weight: bold;
-  margin-bottom: 100px;
-  font-size: 50px;
-}
-header .hero .btn {
-  text-decoration: none;
-  padding: 8px 15px;
-  background: orange;
-  border-radius: 20px;
-  color: white;
+  margin-bottom: 50px;
+  font-size: 70px;
+  z-index: 1;
 }
 
 .info {
@@ -10963,14 +10968,138 @@ header .hero .btn {
   width: 80%;
 }
 
-.carousel-size {
-  width: 100%;
-  height: 50%;
-  margin: 0;
-}
-.carousel-size .carousel-item {
+.section2 {
+  width: 80%;
+  height: 50vh;
+  background-image: url(../img/sectionimg1.jpg);
+  background-position: center;
   background-size: cover;
-  height: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.section2 .section2-content {
+  width: 50%;
+  padding: 30px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 500px;
+}
+.section2 .section2-content .section2-h2 {
+  margin: 20px;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.section3 .reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.section3 .reviews .review-box {
+  width: 500px;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.section3 .reviews .review-box .profile-comments p {
+  font-size: 0.9rem;
+  color: black;
+}
+.section3 .reviews .review-box .review-tier {
+  color: yellow;
+}
+.section3 .reviews .review-box .profile {
+  display: flex;
+  align-items: center;
+}
+.section3 .reviews .review-box .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.section3 .reviews .review-box .profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.section3 .reviews .review-box .profile-name {
+  display: flex;
+  flex-direction: column;
+}
+.section3 .reviews .review-box .profile-name strong {
+  color: orange;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.section3 .reviews .review-box .profile-name span {
+  color: orange;
+  font-size: 0.8rem;
+}
+
+.review-boxtop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 80px;
+  margin: 0;
+  background-color: #0d0e14;
+}
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-container .footer1 {
+  width: 25%;
+}
+footer .footer-container .footer1 .footer-logo {
+  width: 25vw;
+}
+footer .footer-container .footer1 .social a {
+  padding: 0 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+footer .footer-container .footer1 p {
+  color: white;
+}
+footer .footer-container .footer2 {
+  width: 25vw;
+}
+footer .footer-container .footer2 .footer-links li {
+  list-style: none;
+  margin: 10px;
+}
+footer .footer-container .footer2 .footer-links li a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+footer .footer-container .copyright {
+  color: white;
+  margin-top: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */
