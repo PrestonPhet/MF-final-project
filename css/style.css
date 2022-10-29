@@ -11154,4 +11154,24 @@ footer .footer-container .copyright {
   color: black;
 }
 
+.qna {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+  height: 60vh;
+}
+.qna .qna h1, .qna .qna .h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.qna .qna p {
+  padding: 30px 30px;
+  width: 60%;
+}
+
 /*# sourceMappingURL=style.css.map */
